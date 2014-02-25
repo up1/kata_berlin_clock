@@ -16,16 +16,10 @@ public class BerlinClock {
 
 	public String getLowerLine(int hourOfDay) {
 		int[] result = new int[4];
-		if(hourOfDay > 0) {
-			result[0] = 1;
-		}
-		hourOfDay -=1;
-		if(hourOfDay > 0) {
-			result[1] = 1;
-		}
-		hourOfDay -=1;
-		if(hourOfDay > 0) {
-			result[2] = 1;
+		int position = 0;
+		while(hourOfDay > 0) {
+			result[position++] = 1;
+			hourOfDay-=1;
 		}
 		return Arrays.toString(result);
 	}
