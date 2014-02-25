@@ -67,5 +67,15 @@ public class BerlinClockTest {
 	public void minuteInForthLine() {
 		assertEquals("[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]", berlinClock.getForthLine(0));
 	}
+	
+	@Test
+	public void minuteInForthLine1() {
+		assertEquals("[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]", berlinClock.getForthLine(6));
+	}
+	
+	@Test
+	public void minuteInForthLine2() {
+		assertEquals("[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]", berlinClock.getForthLine(11));
+	}
 
 }

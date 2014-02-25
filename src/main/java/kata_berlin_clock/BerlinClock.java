@@ -13,7 +13,7 @@ public class BerlinClock {
 	}
 	
 	public String getForthLine(int minute) {
-		return generate(minute % 5, 11);
+		return generate(minute / 5, 11);
 	}
 
 	private String generate(int row, int sizeOfResult) {
