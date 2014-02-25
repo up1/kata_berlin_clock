@@ -11,5 +11,11 @@ public class BerlinClockTest {
 		BerlinClock berlinClock = new BerlinClock();
 		assertEquals("0000", berlinClock.getUpperLine(0));
 	}
+	
+	@Test
+	public void hourInUpperLine2() {
+		BerlinClock berlinClock = new BerlinClock();
+		assertEquals("1000", berlinClock.getUpperLine(5));
+	}
 
 }
