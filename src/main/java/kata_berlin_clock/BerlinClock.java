@@ -23,4 +23,8 @@ public class BerlinClock {
 		}
 		return Arrays.toString(result);
 	}
+
+	public String getFifthLine(int minute) {
+		return null;
+	}
 }
