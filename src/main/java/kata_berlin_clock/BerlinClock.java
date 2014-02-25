@@ -25,6 +25,6 @@ public class BerlinClock {
 	}
 
 	public String getFifthLine(int minute) {
-		return null;
+		return generate(minute % 5, 4);
 	}
 }
