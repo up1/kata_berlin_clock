@@ -20,4 +20,8 @@ public class BerlinClock {
 		return Arrays.toString(result);
 	}
 
+	public String getForthLine(int minute) {
+		return null;
+	}
+
 }
