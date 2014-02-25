@@ -9,6 +9,11 @@ public class BerlinClock {
 		if(hourOfDay >=5) {
 			result[0] = 1;
 		}
+		hourOfDay -= 5;
+		if(hourOfDay >=5) {
+			result[1] = 1;
+		}
+		
 		return Arrays.toString(result);
 	}
 
