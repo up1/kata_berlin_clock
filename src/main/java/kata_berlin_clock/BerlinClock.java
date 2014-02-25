@@ -14,4 +14,8 @@ public class BerlinClock {
 		return Arrays.toString(result);
 	}
 
+	public String getLowerLine(int hourOfDay) {
+		return null;
+	}
+
 }
