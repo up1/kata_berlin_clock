@@ -6,8 +6,8 @@ public class BerlinClock {
 
 	public String getUpperLine(int hourOfDay) {
 		int[] result = new int[4];
-		int row = hourOfDay/5;
-		while(row > 0) {
+		int row = hourOfDay / 5;
+		while (row > 0) {
 			result[--row] = 1;
 		}
 		return Arrays.toString(result);
@@ -15,10 +15,9 @@ public class BerlinClock {
 
 	public String getLowerLine(int hourOfDay) {
 		int[] result = new int[4];
-		int position = 0;
-		while(hourOfDay > 0) {
-			result[position++] = 1;
-			hourOfDay-=1;
+		int row = hourOfDay % 5;
+		while (row > 0) {
+			result[--row] = 1;
 		}
 		return Arrays.toString(result);
 	}
