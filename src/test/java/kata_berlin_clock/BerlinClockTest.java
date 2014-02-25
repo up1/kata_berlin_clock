@@ -57,5 +57,10 @@ public class BerlinClockTest {
 	public void hourInLowerLine5() {
 		assertEquals("[1, 1, 1, 0]", berlinClock.getLowerLine(8));
 	}
+	
+	@Test
+	public void hourInLowerLine6() {
+		assertEquals("[1, 1, 1, 1]", berlinClock.getLowerLine(14));
+	}
 
 }
