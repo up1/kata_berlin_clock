@@ -5,24 +5,23 @@ import java.util.Arrays;
 public class BerlinClock {
 
 	public String getUpperLine(int hourOfDay) {
-		return generate(hourOfDay / 5);
+		return generate(hourOfDay / 5, 4);
 	}
 
 	public String getLowerLine(int hourOfDay) {
-		return generate(hourOfDay % 5);
+		return generate(hourOfDay % 5, 4);
 	}
-
-	private String generate(int row) {
-		int[] result = new int[4];
-		while (row > 0) {
-			result[--row] = 1;
-		}
-		return Arrays.toString(result);
-	}
-
+	
 	public String getForthLine(int minute) {
 		int[] result = new int[11];
 		return Arrays.toString(result);
 	}
 
+	private String generate(int row, int sizeOfResult) {
+		int[] result = new int[sizeOfResult];
+		while (row > 0) {
+			result[--row] = 1;
+		}
+		return Arrays.toString(result);
+	}
 }
