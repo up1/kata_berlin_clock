@@ -21,7 +21,8 @@ public class BerlinClock {
 	}
 
 	public String getForthLine(int minute) {
-		return null;
+		int[] result = new int[11];
+		return Arrays.toString(result);
 	}
 
 }
