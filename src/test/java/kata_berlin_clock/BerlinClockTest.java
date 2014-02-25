@@ -6,15 +6,15 @@ import org.junit.Test;
 
 public class BerlinClockTest {
 
+	BerlinClock berlinClock = new BerlinClock();
+	
 	@Test
 	public void hourInUpperLine() {
-		BerlinClock berlinClock = new BerlinClock();
 		assertEquals("[0, 0, 0, 0]", berlinClock.getUpperLine(0));
 	}
 	
 	@Test
 	public void hourInUpperLine2() {
-		BerlinClock berlinClock = new BerlinClock();
 		assertEquals("[1, 0, 0, 0]", berlinClock.getUpperLine(5));
 	}
 
