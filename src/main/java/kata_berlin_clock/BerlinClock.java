@@ -6,14 +6,11 @@ public class BerlinClock {
 
 	public String getUpperLine(int hourOfDay) {
 		int[] result = new int[4];
-		if(hourOfDay >=5) {
-			result[0] = 1;
+		int position = 0;
+		while(hourOfDay >= 5) {
+			result[position++] = 1;
+			hourOfDay -= 5;
 		}
-		hourOfDay -= 5;
-		if(hourOfDay >=5) {
-			result[1] = 1;
-		}
-		
 		return Arrays.toString(result);
 	}
 
